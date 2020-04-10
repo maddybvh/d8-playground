@@ -41,14 +41,14 @@ Go to `System Preferences > Security & Privacy > Privacy > Full Disk Access`, cl
 
 ### Get Local web address:
 
-Go to [http://dori.d8-playground/]()
+Go to [http://d8-playground.docksal/]()
 
 ### Docksal commands
 
 Once local development is installed:
 
 * `fin init` to initially create the local environment and pull a seed database and assets
-* `fin import-db` - to pull latest seed database from the production environment
+* `fin import-db` - @todo pull latest seed database from the production environment
 * `fin phpcs` - PHP Code Sniffer
 * `fin start` - to spin containers up
 * `fin stop` - to spin them down
