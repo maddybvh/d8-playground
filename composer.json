@@ -28,11 +28,7 @@
         "drupal/pathauto": "^1.6",
         "drupal/redirect": "^1.5",
         "drupal/reroute_email": "^1.1",
-        "drush/drush": "^10.2",
-        "symfony/debug": "~3.0",
-        "symfony/dom-crawler": "~3.0",
-        "symfony/filesystem": "~3.0",
-        "symfony/finder": "~3.0"
+        "drush/drush": "^10.2"
     },
     "conflict": {
         "drupal/drupal": "*"
