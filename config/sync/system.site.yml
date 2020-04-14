@@ -1,0 +1,14 @@
+uuid: ff734c04-20c2-4dcb-b43d-f60f69de95ed
+name: 'D8 Playground'
+mail: maddy@savaslabs.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
