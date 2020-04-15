@@ -22,6 +22,7 @@ Clone this project:
 * `git clone git@github.com:maddybvh/d8-playground.git` (GitHub repo)
 * `cd d8-playground`
 * `fin init` - build your local development environment
+* `fin composer install` - install composer dependencies
 
 ### Troubleshooting
 
