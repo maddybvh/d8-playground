@@ -1,0 +1,20 @@
+uuid: 633b938a-ddb1-4ae6-a951-65a5b2c5dcfc
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_block_1
+  theme:
+    - bartik
+id: helloblock
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Hello block'
+  provider: custom_block_1
+  label_display: visible
+visibility: {  }
