@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\hello_world\Plugin\Block;
+namespace Drupal\custom_block_1\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
