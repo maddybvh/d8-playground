@@ -5,6 +5,11 @@ namespace Drupal\ex81\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
+/**
+ * Class HelloForm.
+ *
+ * @package Drupal\ex81\Form
+ */
 class HelloForm extends FormBase {
 
   /**
@@ -36,24 +41,25 @@ class HelloForm extends FormBase {
 
     $form['description'] = [
       '#type' => 'item',
-      '#markup' => $this->t('Please enter the title and accept the terms of use of the site.'),
+      '#markup' =>
+      $this->t('Please enter the title and accept the terms of use of the site.'),
     ];
 
-    
     $form['title'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Title'),
-      '#description' => $this->t('Enter the title of the book. Note that the title must be at least 10 characters in length.'),
+      '#description' =>
+      $this->t('Enter the title of the book. Note that the title must be at least 10 characters in length.'),
       '#required' => TRUE,
     ];
 
-    $form['accept'] = array(
+    $form['accept'] = [
       '#type' => 'checkbox',
       '#title' => $this
         ->t('I accept the terms of use of the site'),
-      '#description' => $this->t('Please read and accept the terms of use'),
-    );
-
+      '#description' => $this
+        ->t('Please read and accept the terms of use'),
+    ];
 
     // Group submit handlers in an actions element with a key of "actions" so
     // that it gets styled correctly, and so that other modules may add actions
@@ -73,11 +79,12 @@ class HelloForm extends FormBase {
   }
 
   /**
-   * Validate the title and the checkbox of the form
-   * 
+   * Validate the title and the checkbox of the form.
+   *
    * @param array $form
+   *   The current form.
    * @param \Drupal\Core\Form\FormStateInterface $form_state
-   * 
+   *   The current form state.
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     parent::validateForm($form, $form_state);
@@ -90,7 +97,7 @@ class HelloForm extends FormBase {
       $form_state->setErrorByName('title', $this->t('The title must be at least 10 characters long.'));
     }
 
-    if (empty($accept)){
+    if (empty($accept)) {
       // Set an error for the form element with a key of "accept".
       $form_state->setErrorByName('accept', $this->t('You must accept the terms of use to continue'));
     }
@@ -108,16 +115,16 @@ class HelloForm extends FormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
 
     // Display the results.
-    
     // Call the Static Service Container wrapper
-    // We should inject the messenger service, but its beyond the scope of this example.
+    // We should inject the messenger service,
+    // but its beyond the scope of this example.
     $messenger = \Drupal::messenger();
-    $messenger->addMessage('Title: '.$form_state->getValue('title'));
-    $messenger->addMessage('Accept: '.$form_state->getValue('accept'));
+    $messenger->addMessage('Title: ' . $form_state->getValue('title'));
+    $messenger->addMessage('Accept: ' . $form_state->getValue('accept'));
 
-    // Redirect to home
+    // Redirect to home.
     $form_state->setRedirect('<front>');
 
-  } 
-  
+  }
+
 }
