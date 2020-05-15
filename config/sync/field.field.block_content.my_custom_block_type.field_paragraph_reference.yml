@@ -1,0 +1,23 @@
+uuid: 2119daaf-9c0e-48d7-8fe6-135935927c27
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.my_custom_block_type
+    - field.storage.block_content.field_paragraph_reference
+  module:
+    - entity_reference_revisions
+id: block_content.my_custom_block_type.field_paragraph_reference
+field_name: field_paragraph_reference
+entity_type: block_content
+bundle: my_custom_block_type
+label: 'Paragraph reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions
