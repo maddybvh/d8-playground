@@ -1,0 +1,25 @@
+uuid: 815b0598-e5a1-4e44-8733-be1068f2771c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:my_custom_block_type:6f385a25-91e9-419d-b8f7-7c48b89ab305'
+  module:
+    - block_content
+  theme:
+    - playground
+id: playground_customblock1
+theme: playground
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:6f385a25-91e9-419d-b8f7-7c48b89ab305'
+settings:
+  id: 'block_content:6f385a25-91e9-419d-b8f7-7c48b89ab305'
+  label: 'Custom Block 1'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

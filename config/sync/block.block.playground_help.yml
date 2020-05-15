@@ -1,0 +1,22 @@
+uuid: a823bbaf-f391-43ee-b81e-f8f297bfa41d
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - playground
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: playground_help
+theme: playground
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

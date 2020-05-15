@@ -1,0 +1,25 @@
+uuid: 489161ac-997a-432b-9835-d52df44da0f4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1eeb86ad-c90d-45ea-8e1f-de2e37fb5ad3'
+  module:
+    - block_content
+  theme:
+    - playground
+id: playground_basicblock
+theme: playground
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:1eeb86ad-c90d-45ea-8e1f-de2e37fb5ad3'
+settings:
+  id: 'block_content:1eeb86ad-c90d-45ea-8e1f-de2e37fb5ad3'
+  label: 'Basic block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
