@@ -1,8 +1,6 @@
-enable: true
+enable: false
 description: true
 message: true
 mailkeys: ''
 _core:
   default_config_hash: FWyW0pDoSvPRtqOVlIbk4PxTLiS9S_Ng7zS1JOflWVE
-address: maddy@savaslabs.com
-whitelist: ''
