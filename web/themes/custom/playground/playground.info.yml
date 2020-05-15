@@ -6,12 +6,11 @@ core: 8.x
 base theme: stable
 
 regions:
-  utility: Utility Navigation
-  navigation: Main Navigation
-  breadcrumb: Breadcrumb
-  highlighted: Highlighted
-  content: Content
-  footer: Footer
+  header: 'Header'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  footer: 'Footer'
 
 libraries:
   - playground/global-styling

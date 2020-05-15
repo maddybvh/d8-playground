@@ -7,3 +7,4 @@ global-styling:
     js/scripts.js: {}
   dependencies:
     - core/jquery
+    - core/underscore
