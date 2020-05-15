@@ -1,0 +1,17 @@
+name: playground
+type: theme
+description: d8 playground custom theme
+package: Core
+core: 8.x
+base theme: stable
+
+regions:
+  utility: Utility Navigation
+  navigation: Main Navigation
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  content: Content
+  footer: Footer
+
+libraries:
+  - playground/global-styling
