@@ -11,7 +11,7 @@ dependencies:
 id: playground_customblock1
 theme: playground
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:6f385a25-91e9-419d-b8f7-7c48b89ab305'
 settings:

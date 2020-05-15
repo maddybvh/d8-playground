@@ -3,7 +3,7 @@ type: theme
 description: d8 playground custom theme
 package: Core
 core: 8.x
-base theme: stable
+base theme: classy
 
 regions:
   header: 'Header'

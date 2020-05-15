@@ -1,15 +1,13 @@
-uuid: 5b7f7675-af68-43aa-945b-5cd56cbfda9e
+uuid: fff339d4-3066-4b4f-8c0a-6be06030fa81
 langcode: en
 status: true
 dependencies:
   theme:
     - playground
-_core:
-  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: playground_local_tasks
+id: tabs
 theme: playground
-region: content
-weight: -40
+region: highlighted
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:
